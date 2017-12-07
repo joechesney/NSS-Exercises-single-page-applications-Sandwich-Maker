@@ -8,39 +8,49 @@
 </head>
 <body>
     <form>
-        <fieldset>
-            <legend>Bread</legend>
-            <input type="radio" name="bread" value="wheat"> Wheat <br>
-            <input type="radio" name="bread" value="white"> White <br>
-            <input type="radio" name="bread" value="banana"> Banana <br>
-        </fieldset>
-        <fieldset>
-            <legend>Meat</legend>
-            <input type="checkbox" name="meat" value="ham"> Ham <br>
-            <input type="checkbox" name="meat" value="turkey"> Turkey <br>
-            <input type="checkbox" name="meat" value="chicken"> Chicken <br>
-            <input type="checkbox" name="meat" value="none"> No Meat <br>
-        </fieldset>
-        <fieldset>
-            <legend>Cheese</legend>
-            <input type="checkbox" name="cheese" value="cheddar"> Cheddar <br>
-            <input type="checkbox" name="cheese" value="swiss"> Swiss <br>
-            <input type="checkbox" name="cheese" value="american"> American <br>
-        </fieldset>
-        <fieldset>
-            <legend>Condiments</legend>
-            <input type="checkbox" name="condiments" value="mayo"> Mayo <br>
-            <input type="checkbox" name="condiments" value="mustard"> Mustard <br>
-            <input type="checkbox" name="condiments" value="none"> None <br>
-        </fieldset>
-        <fieldset>
-            <legend>Veggies</legend>
-            <input type="checkbox" name="veggie" value="lettuce"> Lettuce <br>
-            <input type="checkbox" name="veggie" value="tomato"> Tomato <br>
-            <input type="checkbox" name="veggie" value="onion"> Onion <br>
-        </fieldset>
+        <label class="ing" for="bread">Bread: </label>            
+        <select class="ing" id="bread">
+            <option value=" "></option>
+            <option  value="white"> White </option><br>
+            <option  value="wheat"> Wheat </option><br>
+            <option  value="banana"> Banana </option><br>
+        </select>
+        <label for="meat">Meat: </label>        
+        <select class="ing" id="meat">
+            <option value=" "></option>                
+            <option value="ham"> Ham </option><br>
+            <option value="turkey"> Turkey </option><br>
+            <option value="bacon"> Bacon </option><br>
+            <option value="pastrami"> Pastrami </option><br>            
+            <option value="none"> No Meat </option><br>
+        </select>
+        <label for="cheese">Cheese: </label>
+        <select class="ing" id="cheese">
+            <option value=" "></option>                
+            <option value="cheddar"> Cheddar </option><br>
+            <option value="swiss"> Swiss </option><br>
+            <option value="american"> American </option><br>
+            <option value="cottage"> Cottage </option><br>            
+        </select>
+        <label for="condiments">Condiments: </label>        
+        <select class="ing" id="condiments">
+            <option value=" "></option>                
+            <option value="mayo"> Mayo </option><br>
+            <option value="mustard"> Mustard </option><br>
+            <option value="none"> None </option><br>
+        </select>
+        <label for="veggies">Veggies: </label>        
+        <select class="ing" id="veggies">
+            <option value=" "></option>                
+            <option value="lettuce"> Lettuce </option><br>
+            <option value="tomato"> Tomato </option><br>
+            <option value="onion"> Onion </option><br>
+            <option value="none"> None </option><br>
+            
+        </select>
     </form>
+    <div>Total: </div>
     <div id="price"></div>
-    <script src="javascripts/SandwichMaker.js"></script>
+    <script src="dist/bundle.js"></script>
 </body>
 </html>
